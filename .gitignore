@@ -2,3 +2,4 @@
 VOCtest_06-Nov-2007.tar
 VOCtrainval_06-Nov-2007.tar
 /venv
+voc/faster_rcnn_voc2007.pth

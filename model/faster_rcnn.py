@@ -466,6 +466,8 @@ class RegionProposalNetwork(nn.Module):
             anchors)
         proposals = proposals.reshape(proposals.size(0), 4)
         ######################
+
+        #Here we do a deah because for detection layers we are oging to treat proposalas as pre computed and fixed
         
         proposals, scores = self.filter_proposals(proposals, cls_scores.detach(), image.shape)
         rpn_output = {
